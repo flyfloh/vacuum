@@ -103,7 +103,8 @@ EOF
 
 SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname "$0")
-OUTDIR="${BASEDIR}/output"
+#OUTDIR="${BASEDIR}/output"
+OUTDIR="$(pwd)/output"
 CUSTOM_PATH="${BASEDIR}/custom-script"
 FILES_PATH="${CUSTOM_PATH}/files"
 UNPACK_AND_MOUNT=0
